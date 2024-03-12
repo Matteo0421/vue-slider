@@ -51,7 +51,11 @@
                               <span class="my-prev-hook"></span>
                           </div>
 
-                          <div class="my-thumbnail  " v-for="(image, index) in images">
+                          <div class="my-thumbnail  "
+                           v-for="(image, index) in images"
+                           @click ="counter = index"
+                           v-if="counter === index"  class="my-thumbnail active"
+                           >
                               <img class="img-fluid  " :src="image.url" :alt="image.title">
                           </div>
 
