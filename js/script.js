@@ -32,7 +32,8 @@ createApp({
             title: 'Colombia',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.'
         },
-      ]
+      ],
+      counter : 0,
 
     }
   },
