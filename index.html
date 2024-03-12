@@ -36,11 +36,11 @@
               <div class="col-12 p-5">
                   <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
                       <div class="my-carousel-images">
-                        <div class="my-carousel-item active" v-for="(image, index) in images" >
-                          <img class="img-fluid" :src="image.url" :alt="image.title">
+                        <div class="my-carousel-item active">
+                          <img class="img-fluid" :src="images[counter].url" :alt="images[counter].title">
                           <div class="item-description px-3">
-                              <h2>{{ image.title }}</h2>
-                              <p>{{ image.description }}</p>
+                              <h2>{{ images[counter].title }}</h2>
+                              <p>{{ images[counter].description }}</p>
                           </div>
                       </div>
                       </div>
